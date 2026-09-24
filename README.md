@@ -99,6 +99,7 @@ Boat parties, faculty nights, career fairs, cinema and everything on the Danube 
 
 - **Timetable:** the week comes straight from Neptun's calendar export and keeps working without a signal.
 - **Class reminders:** scheduled on the phone itself, so they fire offline and on time.
+- **Home screen widgets:** the next class, today's classes and the week's schedule, right on the home screen of iPhone and Android.
 - **Chat:** real-time direct messages between verified students, with blocking and reporting built in.
 - **Two languages:** the whole app is available in English and Hungarian.
 
@@ -293,15 +294,6 @@ The backend follows Clean Architecture with CQRS through MediatR: controllers di
 | Admin panel | React 18, Vite, TanStack Table, Recharts, Radix UI |
 | Integrations | Neptun, Canvas LMS, Moodle, Firebase Cloud Messaging, Crashlytics, Resend, Sightengine, DeepL |
 | Infrastructure | Docker Compose, Caddy with automatic HTTPS, EAS Build |
-
-## Roadmap
-
-- [x] iPhone and Android releases
-- [x] 25 Hungarian universities on Neptun, plus Canvas and Moodle
-- [x] Offline timetable and class reminders
-- [ ] Home screen widgets for the next class and today's schedule (in testing)
-- [ ] Rooms, akciók and events in Szeged, Debrecen and Pécs
-- [ ] Notification settings per category
 
 ## Team
 
