@@ -40,7 +40,7 @@
 
 **StudentHub** is a free mobile app for university students in Hungary, built in Budapest. It links a student's **Neptun** account (read only) to keep subjects, credits and grades in sync with a **weighted GPA calculator and what-if forecast**, and it verifies that every user is a real student. On top of that it covers the parts of student life that happen off campus: a **marketplace** of verified students, **rooms and flatshares**, a **roommate finder**, **weekly grocery deals (akciók)** from Spar, Lidl, Aldi, Penny and Tesco, **student events in Budapest** and **chat**.
 
-It works at 25 Hungarian universities, including ELTE, BME, Corvinus, Semmelweis, Óbuda, Szeged, Debrecen and Pécs. Available on iPhone and Android, in English and Hungarian, with no ads and no fees.
+It works at every university in Hungary that runs Neptun, from ELTE, BME, Corvinus and Semmelweis to Szeged, Debrecen and Pécs. Available on iPhone and Android, in English and Hungarian, with no ads and no fees.
 
 ## The problem
 
@@ -105,7 +105,7 @@ Boat parties, faculty nights, career fairs, cinema and everything on the Danube 
 
 ## How it works
 
-<p><img src="assets/boards/how.png" width="100%" alt="Three steps: sign in with Neptun, get your student badge, everything unlocks. Free to use, 3 systems connected, 25 universities, 1 app." /></p>
+<p><img src="assets/boards/how.png" width="100%" alt="Three steps: sign in with Neptun, get your student badge, everything unlocks. Free to use, 3 systems connected, 2 languages, 1 app." /></p>
 
 1. **Sign in with Neptun.** The student signs in on their university's own Neptun page, inside the app. The connection is read only: StudentHub never posts or changes anything.
 2. **Get the student badge.** University, faculty and year appear on the profile, so everyone you deal with knows you really are a student.
@@ -113,10 +113,10 @@ Boat parties, faculty nights, career fairs, cinema and everything on the Danube 
 
 ## Supported universities
 
-Grades, the GPA forecast and chat work at every university below. Rooms, akciók and events start in Budapest and roll out city by city, with Szeged, Debrecen and Pécs next.
+StudentHub works at every Hungarian university that runs Neptun. Grades, the GPA forecast and chat work there from day one. Rooms, akciók and events start in Budapest and roll out city by city, with Szeged, Debrecen and Pécs next.
 
 <details>
-<summary><b>All 25 universities</b></summary>
+<summary><b>Some of the universities where students use it</b></summary>
 <br />
 
 | University | City |
@@ -160,7 +160,7 @@ The connection is read only, and the Neptun password stays encrypted on your own
 <details>
 <summary><b>Which universities work?</b></summary>
 <br />
-Any of the <a href="#supported-universities">25 Hungarian universities</a> that run the current Neptun web portal, including ELTE, BME, Corvinus, Semmelweis, Szeged, Debrecen and Pécs. Canvas and Moodle can be linked on top.
+Every Hungarian university that runs Neptun, for example ELTE, BME, Corvinus, Semmelweis, Szeged, Debrecen and Pécs. See <a href="#supported-universities">the list</a> for more. Canvas and Moodle can be linked on top.
 </details>
 
 <details>
@@ -221,7 +221,7 @@ A few of the problems that took the most work.
 
 **Neptun without an official API.** Neptun offers no public API for students. The app opens the university's own login page inside the phone, and once the student signs in it reads the same data the portal shows them. The password is kept in the iOS Keychain or Android Keystore, bound to that device, and is never sent to our servers. The server only receives the profile it needs for verification.
 
-**One integration, 25 portals.** Every university runs its own Neptun installation, and they do not all behave the same. Phones report which request shapes worked at their school (never the data, never the address), and a shape is shared with everyone at that school only after several independent students confirm it. When a portal changes, failures demote the old shape and the app finds the new one on its own.
+**One integration, dozens of portals.** Every university runs its own Neptun installation, and they do not all behave the same. Phones report which request shapes worked at their school (never the data, never the address), and a shape is shared with everyone at that school only after several independent students confirm it. When a portal changes, failures demote the old shape and the app finds the new one on its own.
 
 **Offline first where it matters.** The timetable is refreshed from the university's calendar export, and class reminders are scheduled locally, so a student with no signal still gets told where the next lecture is.
 
