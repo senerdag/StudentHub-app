@@ -302,8 +302,8 @@ StudentHub was designed, built and shipped by two people, working on every part 
 <table>
   <tr>
     <td align="center" width="200">
-      <a href="https://github.com/senerdag"><img src="https://github.com/senerdag.png?size=200" width="88" alt="Şener Dag" /></a><br />
-      <b>Şener Dag</b><br />
+      <a href="https://github.com/senerdag"><img src="https://github.com/senerdag.png?size=200" width="88" alt="Sener Dag" /></a><br />
+      <b>Sener Dag</b><br />
       <sub>Co-founder · Full-stack engineer</sub><br />
       <a href="https://github.com/senerdag">GitHub</a> · <a href="https://www.linkedin.com/in/senerdag/">LinkedIn</a>
     </td>
